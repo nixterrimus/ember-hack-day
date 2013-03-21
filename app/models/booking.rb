@@ -6,4 +6,8 @@ class Booking < ActiveRecord::Base
   def number_of_nights
     ( trip.number_of_days - 1 )
   end
+
+  def cost_per_night
+    hotel.price
+  end
 end
