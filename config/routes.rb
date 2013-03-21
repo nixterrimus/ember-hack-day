@@ -1,5 +1,5 @@
 EmberDay::Application.routes.draw do
-  resources :trips, :hotels, :extras
+  resources :trips, :hotels, :extras, :bookings
 
 
   # The priority is based upon order of creation:
