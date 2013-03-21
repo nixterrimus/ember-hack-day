@@ -3,4 +3,12 @@ EmberDay.Trip = DS.Model.extend({
   startDate:    DS.attr('date'),
   endDate:      DS.attr('date'),  
   description:  DS.attr('string'),
+
+  startMoment: function() {
+    return moment(this.get('startDate'))
+  }.property('startDate'),
+
+  endMoment: function() {
+    return moment(this.get('endDate'))
+  }.property('endDate')
 });
