@@ -11,3 +11,12 @@ is created.
 
 Other branches will contain work beyond the base application, check
 those out if you're curious.
+
+
+## Mastering Space and Time with Javascript
+
+This branch is building the sample app from the mastering space and time book.
+
+What is looks like, so far:
+
+![Progress 1](https://raw.github.com/nixterrimus/ember-hack-day/mastering_space_and_time_demo_app/doc/progress-1.png)
