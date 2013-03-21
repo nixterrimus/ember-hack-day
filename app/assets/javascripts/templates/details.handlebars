@@ -1,0 +1,8 @@
+<h3>{{ selectedTrip.name }}</h3>
+
+<h4>Hotel Options</h4>
+<ul>
+  {{#each hotel in selectedTrip.hotels }}
+  <li>{{ template "hotel_detail" }}</li>
+  {{/each}}
+</ul>
