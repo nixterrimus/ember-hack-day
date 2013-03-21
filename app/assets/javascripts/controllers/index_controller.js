@@ -1,3 +1,7 @@
 EmberDay.IndexController = Ember.ArrayController.extend({
-  itemController: "indexTrip"
+  itemController: "indexTrip",
+
+  selectTrip: function(trip) {
+    this.set('selectedTrip', trip);
+  },
 });

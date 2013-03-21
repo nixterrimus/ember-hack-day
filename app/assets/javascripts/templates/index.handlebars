@@ -1,7 +1,7 @@
 <div class="admin_trips span12">
   {{#each trip in controller }}
   <div class="trip">
-    <div class="header">{{trip.name}}</div>
+    <div class="header" {{action selectTrip trip}}>{{trip.name}}</div>
     <div class="dates">{{trip.startDateDisplay}} - {{trip.endDateDisplay}}</div>
     <div class="details">{{trip.description}}</div>
   </div>
@@ -10,4 +10,7 @@
 
 <div class="detail_view span-12">
   <h2>Details</h2>
+  {{#if selectedTrip}}
+    <h3>{{ selectedTrip.name }}</h3>
+  {{/if}}
 </div>
