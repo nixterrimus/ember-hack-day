@@ -20,9 +20,9 @@
 //= require_self
 //= require_tree .
 
-TimeTravel = Ember.Application.create();
+EmberDay = Ember.Application.create();
 
-TimeTravel.Store = DS.Store.extend({
+EmberDay.Store = DS.Store.extend({
   revision: 12,
   adapter: DS.RESTAdapter.create()
 });
