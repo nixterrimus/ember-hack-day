@@ -25,6 +25,10 @@ gem 'jquery-rails'
 gem 'handlebars-source'
 gem 'ember-rails', git: "git://github.com/emberjs/ember-rails.git"
 
+group :development, :test do
+  gem "jasminerice", :git => 'https://github.com/bradphelan/jasminerice.git'
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
