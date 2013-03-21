@@ -4,6 +4,7 @@ EmberDay.Trip = DS.Model.extend({
   endDate:      DS.attr('date'),  
   description:  DS.attr('string'),
   hotels:       DS.hasMany('EmberDay.Hotel'),
+  extras:       DS.hasMany('EmberDay.Extra'),
 
   startMoment: function() {
     return moment(this.get('startDate'))
